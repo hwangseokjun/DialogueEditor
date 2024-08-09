@@ -1,0 +1,61 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Normal -->
+    <SolidColorBrush x:Key="NormalTransientBrush" Color="#00ffffff"/>
+    <SolidColorBrush x:Key="NormalBlackBrush" Color="#000000"/>
+    <SolidColorBrush x:Key="NormalTranlucentBlackBrush" Color="#cc000000"/>
+    <SolidColorBrush x:Key="NormalBackgroundBrush" Color="#333333"/>
+    <SolidColorBrush x:Key="NormalDarkGrayBrush" Color="#666666"/>
+    <SolidColorBrush x:Key="NormalLightGrayBrush" Color="#888888"/>
+    <SolidColorBrush x:Key="NormalWhiteBrush" Color="#eeeeee"/>
+    <SolidColorBrush x:Key="NormalLightGreenBrush" Color="#d6f5d5"/>
+    <SolidColorBrush x:Key="NormalGreenBrush" Color="#00ff00"/>
+    <SolidColorBrush x:Key="NormalYellowBrush" Color="#ffff00"/>
+    <SolidColorBrush x:Key="NormalAquamarineBrush" Color="#00ffff"/>
+    <SolidColorBrush x:Key="NormalCoralBrush" Color="#dd7e6b"/>
+
+    <!-- ScrollBar -->
+    <SolidColorBrush x:Key="ScrollBarMouseOverBrush" Color="#77000000"/>
+    <SolidColorBrush x:Key="ScrollBarNormalBrush" Color="#55f8f8ff"/>
+    <SolidColorBrush x:Key="ScrollBarNormalBorderBrush" Color="#33000000"/>
+
+    <!-- Vertex -->
+    <LinearGradientBrush x:Key="VertexMouseOverBrush" StartPoint="0 0" EndPoint="1 1">
+        <GradientStop Color="#77ff8080" Offset="0.0"/>
+        <GradientStop Color="#77ff1d1d" Offset="1.0"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="VertexSelectedBrush" StartPoint="0 0" EndPoint="1 1">
+        <GradientStop Color="#ff8080" Offset="0.0"/>
+        <GradientStop Color="#ff1d1d" Offset="1.0"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ActionHeaderBrush" StartPoint="0 0" EndPoint="1 0.75">
+        <GradientStop Color="#ffffcc" Offset="0.0"/>
+        <GradientStop Color="#cccc00" Offset="0.5"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="BranchHeaderBrush" StartPoint="0 0" EndPoint="1 0.75">
+        <GradientStop Color="#f0b2f0" Offset="0.0"/>
+        <GradientStop Color="#a300a3" Offset="0.5"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ConditionHeaderBrush" StartPoint="0 0" EndPoint="1 0.75">
+        <GradientStop Color="#d6e0ff" Offset="0.0"/>
+        <GradientStop Color="#85a3ff" Offset="0.5"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="DialogueHeaderBrush" StartPoint="0 0" EndPoint="1 0.75">
+        <GradientStop Color="#adebad" Offset="0.0"/>
+        <GradientStop Color="#5cd65c" Offset="0.5"/>
+    </LinearGradientBrush>
+
+    <!-- Grid line -->
+    <Pen x:Key="SmallGridPen" Brush="#80555555"/>
+    <Pen x:Key="LargeGridPen" Brush="#232323"/>
+    <GeometryDrawing x:Key="SmallGridDrawing" Pen="{StaticResource SmallGridPen}" Geometry="M 0 0 L 40 0 L 40 40"/>
+    <GeometryDrawing x:Key="LargeGridDrawing" Pen="{StaticResource LargeGridPen}" Geometry="M 0 0 L 320 0 L 320 320"/>
+    <DrawingBrush x:Key="SmallGridBrush"
+                  TileMode="Tile"
+                  Viewport="0 0 40 40" ViewportUnits="Absolute"
+                  Drawing="{StaticResource SmallGridDrawing}"/>
+    <DrawingBrush x:Key="LargeGridBrush"
+                  TileMode="Tile"
+                  Viewport="40 40 320 320" ViewportUnits="Absolute"
+                  Drawing="{StaticResource LargeGridDrawing}"/>
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+﻿<Application x:Class="DialogueEditor.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="/UI/Views/MainWindowView.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Brushes.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/EntryDock.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/ExitDock.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/DarkButton.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/DarkScrollViewer.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/DarkTextBox.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/DarkSlider.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/EdgeCanvasItem.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/EdgeCanvas.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/ActionControl.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/BranchListBoxItem.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/BranchListBox.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/BranchControl.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/ConditionControl.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/DialogueControl.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/NodeCanvasItem.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/NodeCanvas.xaml"/>
+                <ResourceDictionary Source="/DialogueEditor;component/Themes/Units/GraphViewer.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

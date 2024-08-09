@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:units="clr-namespace:DialogueEditor.UI.Units">
+    <Style TargetType="{x:Type units:DarkTextBox}">
+        <Setter Property="ClipToBounds" Value="True"/>
+        <Setter Property="UseLayoutRounding" Value="True"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="AcceptsReturn" Value="True"/>
+        <Setter Property="Background" Value="{StaticResource NormalBlackBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource NormalLightGrayBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Foreground" Value="{StaticResource NormalWhiteBrush}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type units:DarkTextBox}">
+                    <Grid ClipToBounds="{TemplateBinding ClipToBounds}"
+                          UseLayoutRounding="{TemplateBinding UseLayoutRounding}"
+                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="5">
+                            <units:DarkScrollViewer x:Name="PART_ContentHost"
+                                                    Grid.Column="1"
+                                                    VerticalScrollBarVisibility="Auto"
+                                                    Margin="4"/>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" Value="{StaticResource NormalWhiteBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
